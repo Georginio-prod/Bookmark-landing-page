@@ -9,6 +9,8 @@ export default {
       colors: {
         tcol: "#242A45",
         btn: "#FA5959",
+        menubg:'#242A45',
+        ligne:"#979797",
       }
     },
   },
