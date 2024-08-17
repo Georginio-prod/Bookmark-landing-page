@@ -1,58 +1,75 @@
 <template>
   <div>
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-12 px-32">
-        <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/public/logo-bookmark.svg" class="h-8" alt="Flowbite Logo" />
-        </a>
+    <nav :class="isMenuOpen ? 'bg-slate-600 opacity-95' : 'bg-white'" class="max-w-md w-full h-auto flex flex-col items-center px-8 pt-10 mx-auto relative
+            max-w-screen-xl xl:h-auto xl:flex xl:items-center xl:pt-12 xl:px-40">
 
-        <button data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden
-           hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
+      <div class="flex justify-between items-center w-full">
+        <!-- Logo positioned to the left -->
+        <img :src="isMenuOpen ? '/public/Group 9.png' : '/public/logo-bookmark.svg'" alt="logo" class="">
+
+        <!-- Button positioned to the right -->
+        <button @click="toggleMenu" class="xl:hidden lg:hidden">
+          <img :src="isMenuOpen ? '/public/icon-close.svg' : '/public/icon-hamburger.svg'" alt="icon">
         </button>
 
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="flex flex-col items-center tracking-widest text-sm p-4 md:p-0 mt-4 border text-tcol border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 
-            rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="#" class="block py-2 px-3 hover:text-btn">
-                FEATURE
-              </a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-3  hover:text-btn">
-                PRICING
-              </a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-2 hover:text-btn">
-                CONTACT
-              </a>
-            </li>
-            <button
-              class="block py-3 px-8 bg-btn text-white rounded-lg text-sm font-medium tracking-wider shadow-lg hover:bg-white hover:text-btn hover:border-2 hover:border-btn  ">
-              LOGIN
-            </button>
-          </ul>
-
-
-
-
-        </div>
+        <ul class="xl:flex gap-3 lg:flex hidden text-tcol items-center tracking-widest text-sm cursor-pointer">
+          <li class="pr-10 hover:text-btn">
+            FEATURES
+          </li>
+          <li class="pr-10 hover:text-btn">
+            PRICING
+          </li>
+          <li class="pr-6 hover:text-btn">
+            CONTACT
+          </li>
+          <button
+            class="text-white bg-btn py-3 px-8 rounded-lg shadow-md hover:bg-white hover:text-btn hover:border-2 hover:border-btn">
+            LOGIN
+          </button>
+        </ul>
 
       </div>
-    </nav>
 
+      <!-- Menu that appears when isMenuOpen is true -->
+      <div v-if="isMenuOpen" class="menu w-full max-w-md mx-auto pt-10 text-white tracking-widest">
+        <ul class="flex flex-col gap-6 border-t border-ligne border-opacity-15 pt-6 text-center">
+          <li class="border-b border-ligne w-full pb-3 border-opacity-15">
+            <a href="#">FEATURES</a>
+          </li>
+          <li class="border-b border-ligne w-full pb-3 border-opacity-15">
+            <a href="#">PRICING</a>
+          </li>
+          <li class="w-full pb-3 border-b border-ligne border-opacity-15">
+            <a href="#">CONTACT</a>
+          </li>
+          <li class="w-full text-center pt-4">
+            <button class=" border w-full py-2 mb-64 rounded-lg">
+              LOGIN
+            </button>
+          </li>
+        </ul>
+        <div class="flex items-center justify-center gap-10 pb-11">
+          <img src="/public/icon-facebook.svg" alt="fac">
+          <img src="/public/icon-twitter.svg" alt="twi">
+        </div>
+      </div>
+
+
+    </nav>
   </div>
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+  },
+};
 </script>
