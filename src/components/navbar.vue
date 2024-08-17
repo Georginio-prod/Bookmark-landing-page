@@ -1,14 +1,14 @@
 <template>
   <div>
     <nav :class="isMenuOpen ? 'bg-slate-600 opacity-95 ' : 'bg-white'" class="max-w-md w-full h-auto flex flex-col items-center px-8 pt-10 mx-auto relative
-            max-w-screen-xl xl:h-auto xl:flex xl:items-center xl:pt-12 xl:px-40">
+            xl:max-w-screen-xl xl:h-auto xl:flex xl:items-center xl:pt-12 xl:px-40">
 
       <div class="flex justify-between items-center w-full">
         <!-- Logo positioned to the left -->
         <img :src="isMenuOpen ? '/Group 9.png' : '/logo-bookmark.svg'" alt="logo" class="">
 
         <!-- Button positioned to the right -->
-        <button @click="toggleMenu" class="xl:hidden lg:hidden">
+        <button @click="toggleMenu" class="xl:hidden lg:hidden ">
           <img :src="isMenuOpen ? '/icon-close.svg' : '/icon-hamburger.svg'" alt="icon">
         </button>
 
@@ -31,7 +31,7 @@
       </div>
 
       <!-- Menu that appears when isMenuOpen is true -->
-      <div v-if="isMenuOpen" class="menu w-full max-w-md mx-auto pt-10 text-white tracking-widest xl:hidden">
+      <div v-if="isMenuOpen" class="menu w-full max-w-md mx-auto pt-10 text-white tracking-widest xl:hidden ">
         <ul class="flex flex-col gap-6 border-t border-ligne border-opacity-15 pt-6 text-center">
           <li class="border-b border-ligne w-full pb-3 border-opacity-15">
             <a href="#">FEATURES</a>
