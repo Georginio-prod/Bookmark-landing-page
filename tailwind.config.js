@@ -12,7 +12,8 @@ export default {
         menubg:'#242A45',
         ligne:"#979797",
         btn1:"#5267DF",
-        btn2:"#F7F7F7"
+        btn2:"#F7F7F7",
+        bgbtn:"#5267DF",
         
       }
     },

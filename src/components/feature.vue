@@ -34,17 +34,17 @@
         <div class="flex flex-col mb-9 border-b-4 mx-auto w-1/2">
             <div class="pt-10 w-full text-center text-tcol hidden lg:block ">
                 <ul class=" flex justify-center gap-16 text-base ">
-                    <li class="border-b-2 border-transparent px-5 py-2 hover:border-b-4 hover:border-btn transition duration-300 ease-in-out opacity-75 cursor-pointer"
+                    <li class="border-b-2 hover:text-btn border-transparent px-5 py-2 hover:border-b-4 hover:border-btn transition duration-300 ease-in-out opacity-75 cursor-pointer"
                         @click="currentPage = 'simpleBookmarking'"
                         :class="{ 'opacity-100 border-btn': currentPage === 'simpleBookmarking', 'opacity-75': currentPage !== 'simpleBookmarking ' }">
                         Simple Bookmarking
                     </li>
-                    <li class="border-b-2 border-transparent px-5 py-2 hover:border-b-4 hover:border-btn transition duration-300 ease-in-out opacity-75 cursor-pointer"
+                    <li class="border-b-2 hover:text-btn border-transparent px-5 py-2 hover:border-b-4 hover:border-btn transition duration-300 ease-in-out opacity-75 cursor-pointer"
                         @click="currentPage = 'speedySearching'"
                         :class="{ 'opacity-100 border-btn': currentPage === 'speedySearching', 'opacity-75': currentPage !== 'speedySearching' }">
                         Speedy Searching
                     </li>
-                    <li class="border-b-2 border-transparent px-5 py-2 hover:border-b-4 hover:border-btn transition duration-300 ease-in-out opacity-75 cursor-pointer"
+                    <li class="border-b-2 hover:text-btn border-transparent px-5 py-2 hover:border-b-4 hover:border-btn transition duration-300 ease-in-out opacity-75 cursor-pointer"
                         @click="currentPage = 'easySharing'"
                         :class="{ 'opacity-100 border-btn': currentPage === 'easySharing', 'opacity-75': currentPage !== 'easySharing' }">
                         Easy Sharing
@@ -58,3 +58,6 @@
 
 
 </template>
+
+<script>
+</script>

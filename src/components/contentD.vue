@@ -20,13 +20,31 @@
     </div>
 
     <!-- Section Image -->
-    <div class="relative w-full md:w-auto">
+    <!-- <div class="relative w-full md:w-auto">
       <img src="/public/Rectangle.png" alt="back" class="w-full md:w-auto transform md:translate-x-48 relative" />
       <div class="absolute inset-0 flex justify-center md:justify-start">
         <img src="/public/illustration-hero.svg" alt="screen"
           class="transform -translate-y-24 md:translate-x-10 w-4/5 md:w-auto" />
       </div>
-    </div>
+    </div> -->
+
+    <!-- Section pour les écrans xl et lg -->
+<div class="relative lg:w-auto">
+  <img src="/public/Rectangle.png" alt="back" class="lg:w-auto transform lg:translate-x-48 relative lg:block hidden " />
+  <div class="absolute inset-0 flex justify-center lg:justify-start">
+    <img src="/public/illustration-hero.svg" alt="screen" class="transform -translate-y-24 lg:translate-x-10 w-4/5 lg:w-auto" />
+  </div>
+</div>
+
+<!-- Section pour les écrans inférieurs à lg (md et sm) -->
+<div class="relative lg:hidden mb-12">
+  <img src="/public/Rectangle (1).png" alt="back" class="transform relative translate-x-1/2 w-4/5" />
+  <div class="absolute inset-0 flex justify-center">
+    <img src="/public/illustration-hero.svg" alt="screen" class="transform -translate-y-14 w-4/5 translate-x-10" />
+  </div>
+</div>
+
+
   </div>
 </template>
 

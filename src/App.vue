@@ -2,6 +2,7 @@
 import navbar from './components/navbar.vue'
 import ContentD from './components/contentD.vue';
 import feature from './components/feature.vue';
+import Ifeat from './components/Ifeat.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import feature from './components/feature.vue';
   <main>
     <ContentD/>
     <feature/>
+    <Ifeat/>
   </main>
 </template>
 
