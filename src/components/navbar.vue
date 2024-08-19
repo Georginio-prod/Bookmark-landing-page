@@ -3,7 +3,7 @@
     <nav :class="isMenuOpen ? 'bg-slate-600 opacity-95 ' : 'bg-white'" class="max-w-md w-full h-auto flex flex-col items-center px-8 pt-10 mx-auto relative
             xl:max-w-screen-xl xl:h-auto xl:flex xl:items-center xl:pt-12 xl:px-40">
 
-      <div class="flex justify-between items-center w-full">
+      <div class="flex justify-between items-center w-full relative">
         <!-- Logo positioned to the left -->
         <img :src="isMenuOpen ? '/Group 9.png' : '/logo-bookmark.svg'" alt="logo" class="">
 
