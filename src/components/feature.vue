@@ -31,7 +31,7 @@
         </div>
 
 
-        <div class="flex flex-col mb-9 border-b-4 mx-auto w-1/2">
+        <div class="flex flex-col border-b-4 mx-auto w-1/2">
             <div class="pt-10 w-full text-center text-tcol hidden lg:block ">
                 <ul class=" flex justify-center gap-16 text-base ">
                     <li class="border-b-2 hover:text-btn border-transparent px-5 py-2 hover:border-b-4 hover:border-btn transition duration-300 ease-in-out opacity-75 cursor-pointer"
