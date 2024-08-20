@@ -4,6 +4,7 @@ import ContentD from './components/contentD.vue';
 import feature from './components/feature.vue';
 import Ifeat from './components/Ifeat.vue';
 import downl from './components/downl.vue';
+import faq from './components/faq.vue';
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import downl from './components/downl.vue';
     <feature/>
     <Ifeat/>
     <downl/>
+    <faq/>
   </main>
 </template>
 
