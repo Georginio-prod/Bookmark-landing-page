@@ -2,7 +2,7 @@
     <div class="max-w-lg flex flex-col justify-center items-center px-4 mt-20 lg:min-w-full mb-5
                 lg:max-w-lg lg:flex lg:justify-center lg:items-center lg:pt-36 ">
         <div class="text-center">
-            <p class="font-medium text-2lg text-tcol pb-2">
+            <p class="font-medium text-3xl text-tcol pb-2">
                 Download the extension
             </p>
             <h1 class="opacity-50 text-tcol text-sm xl:px-96 mb-12">
@@ -19,7 +19,7 @@
                     Minimum version 62
                 </h3>
                 <div class="custom-dotted-border my-4 mx-auto pt-8 "></div>
-                <button class="py-3 px-8 text-white mt-5 bg-bgbtn rounded-md mb-6">
+                <button class="py-3 px-8 text-white mt-5 bg-bgbtn rounded-md mb-6 hover:text-bgbtn hover:border-2 hover:bg-white hover:border-bgbtn">
                     Add & Install Extension
                 </button>
             </div>
@@ -31,7 +31,7 @@
                     Minimum version 55
                 </h3>
                 <div class="custom-dotted-border my-4 mx-auto pt-8 "></div>
-                <button class="py-3 px-8 text-white mt-5 bg-bgbtn rounded-md mb-6">
+                <button class="py-3 px-8 text-white mt-5 bg-bgbtn rounded-md mb-6 hover:text-bgbtn hover:border-2 hover:bg-white hover:border-bgbtn">
                     Add & Install Extension
                 </button>
             </div>
@@ -43,7 +43,7 @@
                     Minimum version 46
                 </h3>
                 <div class="custom-dotted-border my-4 mx-auto pt-8 "></div>
-                <button class="py-3 px-8 text-white mt-5 bg-bgbtn rounded-md mb-6">
+                <button class="py-3 px-8 text-white mt-5 bg-bgbtn rounded-md mb-6 hover:text-bgbtn hover:border-2 hover:bg-white hover:border-bgbtn ">
                     Add & Install Extension
                 </button>
             </div>
