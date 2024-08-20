@@ -15,6 +15,10 @@ export default {
         btn2:"#F7F7F7",
         bgbtn:"#5267DF",
         
+        
+      },
+      height: {
+        92:'371px'
       }
     },
   },
