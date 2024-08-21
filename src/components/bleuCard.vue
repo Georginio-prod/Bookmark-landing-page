@@ -8,17 +8,21 @@
                 Stay up-to-date with what we’re doing
             </h2>
         </div>
-        <div class="flex gap-4 flex-col lg:flex lg:flex-row">
-            <input type="email" name="mail" 
-            id="mail" placeholder="Enter your email address"
-            class="py-3 pl-5 pr-10 rounded-md text-black"
-            required>
-            
-            <button class="py-3 px-6 bg-btn text-white rounded-md hover:bg-white hover:border hover:border-btn hover:text-btn" type="submit">
+
+        <form id="contact-form" class="flex gap-4 flex-col lg:flex lg:flex-row">
+            <input type="email" name="mail" id="mail" placeholder="Enter your email address"
+                class="py-3 pl-5 pr-10 rounded-md text-black" required>
+
+            <button
+                class="py-3 px-6 bg-btn text-white rounded-md hover:bg-white hover:border hover:border-btn hover:text-btn"
+                type="submit">
                 Contact Us
             </button>
-            
-        </div>
+        </form>
+        <div id="error-message" class="text-red-500 mt-2 hidden">Veuillez vérifié
+            @gmail.com.</div>
+
+
     </div>
 </template>
 
