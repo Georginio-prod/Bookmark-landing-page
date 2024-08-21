@@ -6,6 +6,8 @@ import Ifeat from './components/Ifeat.vue';
 import downl from './components/downl.vue';
 import faq from './components/faq.vue';
 import inputG from './components/inputG.vue';
+import bleuCard from './components/bleuCard.vue';
+
 </script>
 
 <template>
@@ -17,6 +19,7 @@ import inputG from './components/inputG.vue';
     <downl/>
     <faq/>
     <!-- <inputG/> -->
+     <bleuCard/>
   </main>
 </template>
 
