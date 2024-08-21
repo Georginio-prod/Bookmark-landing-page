@@ -1,9 +1,10 @@
 <template>
   <div>
-    <nav :class="isMenuOpen ? 'bg-slate-600 opacity-95 ' : 'bg-white'" class="max-w-md w-full h-auto flex flex-col items-center px-8 pt-10 mx-auto relative
-            xl:max-w-screen-xl xl:h-auto xl:flex xl:items-center xl:pt-12 xl:px-40">
+    <nav :class="isMenuOpen ? 'bg-slate-600 opacity-95 absolute top-0 right-0 left-0 z-50' : 'bg-white'" class="max-w-md w-full h-auto flex flex-col items-center px-8 pt-10 mx-auto 
+            xl:max-w-screen-xl xl:h-auto xl:flex xl:items-center xl:pt-12 xl:px-40 ">
+            <!-- absolute top-0 right-0 left-0 z-[1000] -->
 
-      <div class="flex justify-between items-center w-full relative">
+      <div class="flex justify-between items-center w-full ">
         <!-- Logo positioned to the left -->
         <img :src="isMenuOpen ? '/Group 9.png' : '/logo-bookmark.svg'" alt="logo" class="">
 
