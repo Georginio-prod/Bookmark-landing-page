@@ -6,15 +6,15 @@
 
             <!-- Navigation buttons -->
             <div class="text-white flex flex-col items-center gap-4 md:gap-10 md:flex-row md:-translate-x-1/2">
-                <button>Features</button>
-                <button>Pricing</button>
-                <button>Contact</button>
+                <button class="hover:text-btn">Features</button>
+                <button class="hover:text-btn">Pricing</button>
+                <button class="hover:text-btn">Contact</button>
             </div>
 
             <!-- Social media icons -->
             <div class="flex gap-8 mt-4 md:mt-0">
-                <img src="/public/icon-facebook.svg" alt="">
-                <img src="/public/icon-twitter.svg" alt="">
+                <img src="/public/icon-facebook.svg" alt="" class="hover:bg-btn">
+                <img src="/public/icon-twitter.svg" alt="" >
             </div>
         </div>
     </div>
