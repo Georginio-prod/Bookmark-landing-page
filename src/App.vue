@@ -7,22 +7,21 @@ import downl from './components/downl.vue';
 import faq from './components/faq.vue';
 import inputG from './components/inputG.vue';
 import bleuCard from './components/bleuCard.vue';
-
+import foot from './components/foot.vue';
 </script>
 
 <template>
-  <navbar/>
+  <navbar />
   <main>
-    <ContentD/>
-    <feature/>
-    <Ifeat/>
-    <downl/>
-    <faq/>
+    <ContentD />
+    <feature />
+    <Ifeat />
+    <downl />
+    <faq />
     <!-- <inputG/> -->
-     <bleuCard/>
+    <bleuCard />
+    <foot />
   </main>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
