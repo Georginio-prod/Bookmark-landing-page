@@ -1,57 +1,76 @@
-# Vue 3 + Vite
+# Bookmark — Landing page (Frontend Mentor)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![Vue](https://img.shields.io/badge/Vue-3-4FC08D?logo=vue.js&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
+![PrimeVue](https://img.shields.io/badge/PrimeVue-4-41B883?logo=primevue&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
+![Frontend Mentor](https://img.shields.io/badge/Frontend_Mentor-Challenge-3F54A3)
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+🔗 **Démo en ligne** : <https://bookmark-landing-page-silk-five.vercel.app>
+📦 **Code source** : <https://github.com/Georginio-prod/Bookmark-landing-page>
+🎯 **Défi** : [Bookmark landing page](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158) (niveau *Intermediate*)
 
-# Front-end Style Guide
- # Bookmark landing page
-## Layout
+---
 
-The designs were created to the following widths:
+## 📌 Présentation
 
-- Mobile: 375px
-- Desktop: 1440px
+Landing page d'une **extension de gestion de favoris**. Le défi ajoute plusieurs
+interactions à la simple intégration : **onglets** de fonctionnalités, **accordéon FAQ**,
+**validation d'e-mail** dans le formulaire d'abonnement et menu mobile.
 
-> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+## ✨ Fonctionnalités
 
-## Colors
+- Héros avec illustration et boutons « Get it on Chrome / Firefox ».
+- **Section Features à onglets** (Simple Bookmarking / Speedy Searching / Easy Sharing) avec changement de contenu.
+- Cartes de **téléchargement** par navigateur (Chrome, Firefox, Opera).
+- **FAQ en accordéon** (ouverture / fermeture des questions).
+- Formulaire « Stay up-to-date » avec **validation de l'adresse e-mail** et message d'erreur.
+- Menu de navigation mobile plein écran.
 
-### Primary
+## 🛠️ Stack
 
-- Soft Blue: hsl(231, 69%, 60%)
-- Soft Red: hsl(0, 94%, 66%)
+Vue 3 · Vite 5 · PrimeVue 4 (preset Tailwind, composant `CascadeSelect` personnalisé) · Tailwind CSS 3 + `tailwindcss-primeui`.
 
-### Neutral
+## 📁 Structure
 
-- Grayish Blue: hsl(229, 8%, 60%)
-- Very Dark Blue: hsl(229, 31%, 21%)
+```
+Bookmark-landing-page/
+├── src/
+│   ├── App.vue · main.js · style.css
+│   ├── presets/config/          # Presets PrimeVue (CascadeSelect)
+│   └── components/
+│       ├── navbar.vue           # Navigation + menu mobile
+│       ├── contentD.vue         # Héros
+│       ├── feature.vue · Ifeat.vue   # Onglets de fonctionnalités
+│       ├── downl.vue · bleuCard.vue  # Cartes de téléchargement
+│       ├── faq.vue              # Accordéon FAQ
+│       ├── inputG.vue           # Formulaire e-mail + validation
+│       └── foot.vue             # Footer
+├── public/                      # Illustrations, logos, icônes
+└── tailwind.config.js · vite.config.js
+```
 
-## Typography
+## 🚀 Installation & lancement
 
-### Body Copy
+```bash
+git clone https://github.com/Georginio-prod/Bookmark-landing-page.git
+cd Bookmark-landing-page
+npm install
+npm run dev
+```
 
-- Font size: 18px
+## 🌐 Déploiement
 
-### Fonts
+Déployé sur **Vercel**. Aucune configuration nécessaire.
 
-- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
-- Weights: 400, 500
+---
 
-## Icons
+## 👤 Auteur
 
-For the icons in the design, you can choose between using the icons provided or a font icon library.
+**Komla Etonam Georges EKLOU** (Georginio) — Développeur Full Stack Web & Web3
 
-Some library suggestions can be found below:
+[![GitHub](https://img.shields.io/badge/GitHub-Georginio--prod-181717?logo=github)](https://github.com/Georginio-prod)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profil-0A66C2?logo=linkedin)](https://www.linkedin.com/in/komla-etonam-georges-eklou-68518b23b)
+[![Portfolio](https://img.shields.io/badge/Portfolio-georginio.w3frame.com-6C63FF)](https://georginio.w3frame.com/)
 
-- [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com)
-
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
-
-# vercel link 
-https://bookmark-landing-page-silk-five.vercel.app/
-
-# github 
-https://github.com/Georginio-prod/Bookmark-landing-page
+> 📚 Tous mes projets sont listés et documentés sur mon [profil GitHub](https://github.com/Georginio-prod).
